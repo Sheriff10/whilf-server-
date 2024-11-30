@@ -19,7 +19,7 @@ app.use(paymentRoutes);
 // Database Connection
 mongoose
   .connect(
-    "mongodb+srv://ibrahimsheriff999:GESS7iN1MxLxU7ws@cluster0.qmlkd1x.mongodb.net/?retryWrites=true&w=majority",
+    "mongodb+srv://ibrahimsheriff999:Iyl7ENRYE7I0SynQ@cluster0.gwcrs.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0",
     {
       useNewUrlParser: true,
       useUnifiedTopology: true,
