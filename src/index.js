@@ -18,10 +18,13 @@ app.use(paymentRoutes);
 
 // Database Connection
 mongoose
-  .connect("mongodb://localhost:27017/whilf", {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-  })
+  .connect(
+    "mongodb+srv://ibrahimsheriff999:GESS7iN1MxLxU7ws@cluster0.qmlkd1x.mongodb.net/?retryWrites=true&w=majority",
+    {
+      useNewUrlParser: true,
+      useUnifiedTopology: true,
+    }
+  )
   .then(() => {
     console.log("Connected to MongoDB");
     app.listen(5000, () => console.log("Server running on port 5000"));
