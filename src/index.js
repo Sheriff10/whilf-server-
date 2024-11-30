@@ -15,7 +15,7 @@ app.use(morgan("dev")); // Use morgan to log requests
 // Routes
 app.use(authRoutes);
 app.use(paymentRoutes);
-
+const PORT = process.env.PORT || 5000;
 // Database Connection
 mongoose
   .connect(
@@ -27,6 +27,6 @@ mongoose
   )
   .then(() => {
     console.log("Connected to MongoDB");
-    app.listen(5000, () => console.log("Server running on port 5000"));
+    app.listen(PORT, () => console.log("Server running on port 5000"));
   })
   .catch((err) => console.error("Database connection error:", err));
